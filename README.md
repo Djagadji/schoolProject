@@ -1,0 +1,1 @@
+tjena alla i grupp 1
