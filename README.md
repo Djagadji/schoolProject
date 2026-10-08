@@ -2,9 +2,9 @@ temperatur.c - Nafisa
 ---
 geometri.c - Valentin
 ---
-multiplikation.c - Anton
+multiplikation.c - Rickard
 ---
-primtal.c - Rickard
+primtal.c - Anton
 ---
 fizzbuzz.c - Oskar
 ---
