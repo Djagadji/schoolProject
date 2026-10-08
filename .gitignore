@@ -3,3 +3,5 @@
 sensor_app
 build/
 verktygslada
+
+.cache/
