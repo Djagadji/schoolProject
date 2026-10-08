@@ -1,49 +1,42 @@
 #include <stdio.h>
 #include "verktyg.h"
 
-double num1 = 0.0;
-double num2 = 0.0;
-double result = 0.0;
-char operator;
-
 /* printf("Sum: %.2f\n", first + second);
  printf("Difference: %.2f\n", first - second);
  printf("Product: %.2f\n", first * second);
  printf("Quotient: %.2f\n", first / second); */
 
-double berakna()
+double berakna(double a, double b, char operatortecken)
 {
-    printf("First number: ");
-    scanf("%lf", &num1);
+    double result;
 
-    printf("Operator ( +, - , * , / ): ");
-    scanf(" %c", &operator);
+    // printf("First number: ");
+    // scanf("%lf", &a);
 
-    printf("Second number: ");
-    scanf("%lf", &num2);
+    // printf("Operator ( +, - , * , / ): ");
+    // scanf(" %c", &operatortecken);
 
-    switch (operator)
+    // printf("Second number: ");
+    // scanf("%lf", &b);
+
+    switch (operatortecken)
     {
     case '+':
-        result = num1 + num2;
-        printf("%.2lf + %.2lf = %.2lf\n", num1, num2, result);
+        result = a + b;
         break;
 
     case '-':
-        result = num1 - num2;
-        printf("%.2lf - %.2lf = %.2lf\n", num1, num2, result);
+        result = a - b;
         break;
 
     case '*':
-        result = num1 * num2;
-        printf("%.2lf * %.2lf = %.2lf\n", num1, num2, result);
+        result = a * b;
         break;
 
     case '/':
-        if (num2 != 0)
+        if (b != 0)
         {
-            result = num1 / num2;
-            printf("%.2lf / %.2lf = %.2lf\n", num1, num2, result);
+            result = a / b;
         }
         else
         {
@@ -52,13 +45,7 @@ double berakna()
         break;
 
     default:
-        printf("Error: '%c' is not a valid math operator.\n", operator);
+        printf("Error: '%c' is not a valid math operator.\n", operatortecken);
     }
     return result;
-}
-
-int main(void)
-{
-    berakna();
-    return 0;
 }
