@@ -1,7 +1,3 @@
----
-Tasks
----
-
 temperatur.c - Nafisa
 ---
 geometri.c - Valentin
